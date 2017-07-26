@@ -20,12 +20,13 @@ public class Edit extends HttpServlet
                 PrintWriter p=res.getWriter();
                 res.setContentType("text/html");
                 //p.println(Fullname);
+                  Edit.update();
                p.println("<html>"+"<head>"+"<body>");
-               p.println("<form action='Add' method='POST'>");
+               p.println("<form action='show' method='GET'>");
                 p.println("name:<input type='text'>");
                  p.println("<input type='submit'"+ "value='update'>");
                  p.println("</form>"+"</body>"+"</head>"+"</html>");
-                     Edit.update();
+                   
             }
             public static void update()
 {

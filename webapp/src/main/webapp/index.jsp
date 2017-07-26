@@ -1,6 +1,6 @@
 <html>
 <body>
-<form action="/show" method="POST">
+<form action="/show" method="GET">
 Fullname:<input type="text" name="Fullname">
 Email:<input type="text" name="Email">
 Place:<input type="text" name="Place">
